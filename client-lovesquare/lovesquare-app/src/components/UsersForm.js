@@ -1,5 +1,9 @@
 import React, { Component } from 'react'
 
+import { connect } from 'react-redux'
+
+import { addUser } from '../actions/usersActions'
+
 class UsersForm extends Component {
 
     state = {
@@ -23,9 +27,14 @@ class UsersForm extends Component {
         })
     }
 
+    handleSubmit = e => {
+        e.preventDefault()
+        this.props.addUser(this.state)
+    }
+
     render() {
         return (
-            <form>
+            <form onSubmit={this.handleSubmit}>
                 <label>Profile Picture:</label>
 
                 <br />
@@ -97,4 +106,4 @@ class UsersForm extends Component {
 }
 
 
-export default UsersForm
+export default connect(null, { addUser })(UsersForm)
