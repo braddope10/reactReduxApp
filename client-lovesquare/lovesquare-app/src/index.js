@@ -7,6 +7,7 @@ import { composeWithDevTools } from 'redux-devtools-extension'
 import { Provider } from 'react-redux'
 import thunk from 'redux-thunk'
 import App from './components/App'
+import { rootReducer } from './reducers/rootReducer'
 
 // need to create a store for redux => createStore 1. reducer 2. dev tools
 
