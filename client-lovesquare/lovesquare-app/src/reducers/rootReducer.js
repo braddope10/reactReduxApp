@@ -7,5 +7,7 @@ import { commentsReducer } from './commentsReducer'
 
 
 export const rootReducer = combineReducers({
-
+    users: usersReducer,
+    posts: postsReducer,
+    comments: commentsReducer
 })
