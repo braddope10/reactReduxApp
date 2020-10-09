@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import { connect } from 'react-redux'
 
 import { fetchUsers } from '../actions/usersActions'
+import UsersForm from './UsersForm'
 
 class UsersContainer extends Component {
 
@@ -13,6 +14,7 @@ class UsersContainer extends Component {
         return (
             <div>
                 UsersContainer
+                <UsersForm />
             </div>
         )
     }
