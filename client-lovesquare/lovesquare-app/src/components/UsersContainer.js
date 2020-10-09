@@ -4,6 +4,11 @@ import { connect } from 'react-redux'
 import { fetchUsers } from '../actions/usersActions'
 
 class UsersContainer extends Component {
+
+    componentDidMount() {
+        this.props.fetchUsers()
+    }
+
     render() {
         return (
             <div>
