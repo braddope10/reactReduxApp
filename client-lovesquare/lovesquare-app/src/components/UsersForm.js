@@ -15,6 +15,14 @@ class UsersForm extends Component {
         age: ''
     }
 
+    handleChange = e => {
+        const { name, value } = e.target
+
+        this.setState({
+            [name]: value
+        })
+    }
+
     render() {
         return (
             <form>
@@ -22,7 +30,7 @@ class UsersForm extends Component {
 
                 <br />
                 <br />
-                
+
                 <input type='file' value={this.state.profile_pic} onChange={this.handleChange} name="profile_pic" />
 
                 <br />
