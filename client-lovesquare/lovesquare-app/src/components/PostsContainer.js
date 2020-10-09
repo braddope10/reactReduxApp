@@ -1,11 +1,14 @@
 import React, { Component } from 'react'
+import { postsReducer } from '../reducers/postsReducer'
 
-export default class PostsContainer extends Component {
+class PostsContainer extends Component {
     render() {
         return (
             <div>
-                
+                PostsContainer
             </div>
         )
     }
 }
+
+export default PostsContainer

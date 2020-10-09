@@ -1,9 +1,12 @@
 import React from 'react';
+import UsersContainer from './UsersContainer'
+import PostsContainer from './PostsContainer'
 
 const App = () => {
     return(
         <div>
-            Hello World
+            <UsersContainer />
+            <PostsContainer />
         </div>
     )
 }
