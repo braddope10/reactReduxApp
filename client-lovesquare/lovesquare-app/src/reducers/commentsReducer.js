@@ -1,6 +1,6 @@
-export const usersReducer = (state= [], action) => {
+export const commentsReducer = (state= [], action) => {
     switch(action.type){
-        case 'FETCH_USERS':
+        case 'FETCH_COMMENTS':
             return action.payload
         default:
             return state
