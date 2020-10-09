@@ -19,6 +19,10 @@ class UsersForm extends Component {
         return (
             <form>
                 <label>Profile Picture:</label>
+
+                <br />
+                <br />
+                
                 <input type='file' value={this.state.profile_pic} onChange={this.handleChange} name="profile_pic" />
 
                 <br />
