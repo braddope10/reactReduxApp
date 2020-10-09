@@ -1,4 +1,7 @@
 import React, { Component } from 'react'
+import { connect } from 'react-redux'
+
+import { fetchUsers } from '../actions/usersActions'
 
 class UsersContainer extends Component {
     render() {
@@ -10,4 +13,4 @@ class UsersContainer extends Component {
     }
 }
 
-export default UsersContainer
+export default connect(null, { fetchUsers })(UsersContainer)
