@@ -10,6 +10,14 @@ class PostsForm extends Component {
         content: '',
         user_id: this.user_id
     }
+
+    handleChange = e => {
+        const { name, value } = e.target
+
+        this.setState({
+            [name]: value
+        })
+    }
     
     
     
