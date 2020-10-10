@@ -1,6 +1,10 @@
 import React, { Component } from 'react'
 
-export default class PostsForm extends Component {
+import { connect } from 'react-redux'
+
+import { addPosts } from '../actions/postsActions'
+
+class PostsForm extends Component {
     render() {
         return (
             <div>
@@ -9,3 +13,5 @@ export default class PostsForm extends Component {
         )
     }
 }
+
+
