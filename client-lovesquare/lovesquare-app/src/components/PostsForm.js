@@ -24,19 +24,13 @@ class PostsForm extends Component {
         this.props.addPosts(this.state)
     }
     
-    
-    
-    
-    
-    
-    
-    
-    
     render() {
         return (
-            <div>
-                
-            </div>
+            <form onSubmit={this.handleSubmit}>
+                <label>Create Post!</label>
+                <input type="text" value={this.state.content} onChange={this.handleChange} name="content" />
+            </form>
+
         )
     }
 }
