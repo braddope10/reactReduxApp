@@ -30,9 +30,10 @@ class PostsForm extends Component {
                 <label>Create Post!</label>
                 <input type="text" value={this.state.content} onChange={this.handleChange} name="content" />
             </form>
-
         )
     }
 }
+
+export default connect(null, { addPosts })(PostsForm)
 
 
