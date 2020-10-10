@@ -18,6 +18,11 @@ class PostsForm extends Component {
             [name]: value
         })
     }
+
+    handleSubmit = e => {
+        e.preventDefault()
+        this.props.addPosts(this.state)
+    }
     
     
     
