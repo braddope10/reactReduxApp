@@ -8,7 +8,7 @@ class PostsForm extends Component {
     
     state = {
         content: '',
-        user_id: ''
+        user_id: this.user_id
     }
     
     
