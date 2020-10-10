@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 
 import { connect } from 'react-redux'
 
-import { addPosts } from '../actions/postsActions'
+import { addPost } from '../actions/postsActions'
 
 class PostsForm extends Component {
     
@@ -21,19 +21,28 @@ class PostsForm extends Component {
 
     handleSubmit = e => {
         e.preventDefault()
-        this.props.addPosts(this.state)
+        this.props.addPost(this.state)
     }
     
     render() {
         return (
             <form onSubmit={this.handleSubmit}>
-                <label>Create Post!</label>
+                <label>New Post:</label>
+
+                <br />
+                <br />
+
                 <input type="text" value={this.state.content} onChange={this.handleChange} name="content" />
+
+                <br />
+                <br />
+
+                <input type="submit" value="Create Post" />
             </form>
         )
     }
 }
 
-export default connect(null, { addPosts })(PostsForm)
+export default connect(null, { addPost })(PostsForm)
 
 
