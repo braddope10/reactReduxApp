@@ -43,3 +43,5 @@ class CommentsForm extends Component {
         )
     }
 }
+
+export default connect(null, { addComment })(CommentsForm)
