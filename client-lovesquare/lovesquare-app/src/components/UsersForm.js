@@ -35,7 +35,7 @@ class UsersForm extends Component {
     render() {
         return (
             <form onSubmit={this.handleSubmit}>
-                <label>Profile Picture:</label>
+                <label>Profile Picture: </label>
 
                 <br />
                 <br />
@@ -45,55 +45,55 @@ class UsersForm extends Component {
                 <br />
                 <br />
                 
-                <label>Name:</label>
+                <label>Name: </label>
                 <input type='text' value={this.state.name} onChange={this.handleChange} name="name" />
 
                 <br />
                 <br />
 
-                <label>Email:</label>
+                <label>Email: </label>
                 <input type='text' value={this.state.email} onChange={this.handleChange} name="email" />
 
                 <br />
                 <br />
 
-                <label>Password:</label>
-                <input type='text' value={this.state.password_digest} onChange={this.handleChange} name="password_digest" />
+                <label>Password: </label>
+                <input type='password' value={this.state.password_digest} onChange={this.handleChange} name="password_digest" />
 
                 <br />
                 <br />
 
-                <label>Bio:</label>
+                <label>Bio: </label>
                 <input type='text' value={this.state.bio} onChange={this.handleChange} name="bio" />
 
                 <br />
                 <br />
 
-                <label>City:</label>
+                <label>City: </label>
                 <input type='text' value={this.state.city} onChange={this.handleChange} name="city" />
 
                 <br />
                 <br />
 
-                <label>State:</label>
+                <label>State: </label>
                 <input type='text' value={this.state.state} onChange={this.handleChange} name="state" />
 
                 <br />
                 <br />
 
-                <label>Sex:</label>
+                <label>Sex: </label>
                 <input type='text' value={this.state.sex} onChange={this.handleChange} name="sex" />
 
                 <br />
                 <br />
 
-                <label>Preference:</label>
+                <label>Preference: </label>
                 <input type='text' value={this.state.preference} onChange={this.handleChange} name="preference" />
 
                 <br />
                 <br />
 
-                <label>Age:</label>
+                <label>Age: </label>
                 <input type='text' value={this.state.age} onChange={this.handleChange} name="age" />
 
                 <br />
