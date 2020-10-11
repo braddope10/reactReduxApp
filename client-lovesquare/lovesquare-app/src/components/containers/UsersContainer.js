@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
-import { fetchUsers } from '../actions/usersActions'
-import UsersForm from './UsersForm'
+import { fetchUsers } from '../../actions/usersActions'
+import UsersForm from '../forms/UsersForm'
 
 class UsersContainer extends Component {
 

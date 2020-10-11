@@ -1,8 +1,9 @@
 import React from 'react';
-import UsersContainer from './UsersContainer'
-import PostsContainer from './PostsContainer'
-import CommentsContainer from './CommentsContainer';
+import UsersContainer from './containers/UsersContainer'
+import PostsContainer from './containers/PostsContainer'
+import CommentsContainer from './containers/CommentsContainer';
 import Nav from './Nav'
+import './App.css'
 
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 

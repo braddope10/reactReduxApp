@@ -53,22 +53,6 @@ export const autoLogin = () => dispatch => {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 export const fetchUsers = () => {
     return (dispatch) => {
         fetch('http://localhost:3000/users')

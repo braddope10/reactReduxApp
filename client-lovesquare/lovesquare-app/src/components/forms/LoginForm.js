@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
-import { fetchUser } from '../actions/usersActions'
+import { fetchUser } from '../../actions/usersActions'
 
 export default class LoginForm extends Component {
 

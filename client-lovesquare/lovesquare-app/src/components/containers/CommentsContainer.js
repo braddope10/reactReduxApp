@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
-import { fetchComments } from '../actions/commentsActions'
-import CommentsForm from './CommentsForm'
+import { fetchComments } from '../../actions/commentsActions'
+import CommentsForm from '../forms/CommentsForm'
 
 class CommentsContainer extends Component {
 

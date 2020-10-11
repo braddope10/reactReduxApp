@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 
 import { connect } from 'react-redux'
 
-import { addPost } from '../actions/postsActions'
+import { addPost } from '../../actions/postsActions'
 
 class PostsForm extends Component {
     
