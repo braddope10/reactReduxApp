@@ -15,7 +15,7 @@ class SignedInNav extends Component {
                         <li>Posts</li>
                     </Link>
                    
-                    <Link to="/signup">
+                    <Link to="/profile">
                         <li>Profile</li>
                     </Link>
 

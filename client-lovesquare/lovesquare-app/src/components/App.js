@@ -2,8 +2,13 @@ import React from 'react';
 import UsersContainer from './containers/UsersContainer'
 import PostsContainer from './containers/PostsContainer'
 import CommentsContainer from './containers/CommentsContainer';
+import ProfilesContainer from '../components/containers/ProfilesContainer'
 import Nav from './Nav';
+import SignedInNav from './SignedInNav';
 import './App.css'
+import Home from './Home'
+import About from './About'
+import Logout from './Logout'
 
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 
@@ -11,22 +16,26 @@ const App = () => {
     return(
         <Router>
             <div>
-                <Nav />
+                {<SignedInNav />}
                 <Switch>
                     <Route exact path="/">
-                        {/* <Landing /> */}
+                        <Home />
                     </Route>
 
-                    <Route>
-                        {/* <Home /> */}
-                    </Route>
-
-                    <Route>
+                    <Route path="/posts">
                         <PostsContainer />
                     </Route>
 
-                    <Route>
-                        <UsersContainer />
+                    <Route path="/profile"> 
+                        <ProfilesContainer />
+                    </Route>
+
+                    <Route path="/about">
+                        <About />
+                    </Route>
+
+                    <Route path="/logout">
+                        <Logout />
                     </Route>
                 </Switch>
             </div>
