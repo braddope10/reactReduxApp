@@ -2,11 +2,19 @@
     text-align: center;
 }
 
-nav{
+nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
     min-height: 10vh;
-    background: rgb(73, 79, 82);
+    background: rgb(102, 124, 136);
     color: white;
+}
+
+.nav-links {
+    width: 20%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
 }

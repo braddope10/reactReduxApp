@@ -10,7 +10,7 @@ class Nav extends Component {
                     <h3>Love Square</h3>
                 </Link>
                 
-                <ul>
+                <ul className="nav-links">
                     <Link to="/login">
                         <li>Login</li>
                     </Link>
