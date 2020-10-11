@@ -4,16 +4,17 @@ class UsersController < ApplicationController
   before_action :authorized, only: [:auto_login]
 
   # GET /users
-  # def index
-  #   @users = User.all
+  def index
+    @users = User.all
 
-  #   render json: @users
-  # end
+    render json: @users
+  end
 
   # GET /users/1
-  # def show
-  #   render json: @user
-  # end
+  def show
+    @user = User.find(params[:id])
+    render json: @user
+  end
 
   # POST /users
   def create
