@@ -1,11 +1,18 @@
 import React, { Component } from 'react'
 
-export default class Nav extends Component {
+class Nav extends Component {
     render() {
         return (
-            <div>
-                
-            </div>
+            <nav>
+                <h3>Love Square</h3>
+                <ul>
+                    <li>Login</li>
+                    <li>Sign Up</li>
+                </ul>
+            </nav>
         )
     }
 }
+
+
+export default Nav
