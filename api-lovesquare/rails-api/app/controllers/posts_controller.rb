@@ -25,18 +25,18 @@ class PostsController < ApplicationController
   end
 
   # PATCH/PUT /posts/1
-  def update
-    if @post.update(post_params)
-      render json: @post
-    else
-      render json: @post.errors, status: :unprocessable_entity
-    end
-  end
+  # def update
+  #   if @post.update(post_params)
+  #     render json: @post
+  #   else
+  #     render json: @post.errors, status: :unprocessable_entity
+  #   end
+  # end
 
   # DELETE /posts/1
-  def destroy
-    @post.destroy
-  end
+  # def destroy
+  #   @post.destroy
+  # end
 
   private
     # Use callbacks to share common setup or constraints between actions.
