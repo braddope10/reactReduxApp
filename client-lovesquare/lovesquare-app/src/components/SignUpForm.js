@@ -5,7 +5,7 @@ import { signUserUp } from '../actions/userActions'
 class SignUpForm extends Component {
 
     state = {
-        username: '', 
+        email: '', 
         password: ''
     }
 
