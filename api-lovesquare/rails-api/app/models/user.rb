@@ -1,7 +1,7 @@
 class User < ApplicationRecord
     has_many :posts
     has_many :comments, :through => :posts
-    has_one :
+    has_one :profile
 
     has_secure_password
 
