@@ -1,3 +1,11 @@
+const setUser = (payload) => ({ type: "SET_USER", payload})
+
+export const logUserOut = () => ({type: "LOG_OUT"})
+
+export const fecthUser = (user)
+
+
+
 export const fetchUsers = () => {
     return (dispatch) => {
         fetch('http://localhost:3000/users')
