@@ -28,7 +28,7 @@ class ProfilesForm extends Component {
 
     handleSubmit = e => {
         e.preventDefault()
-        this.props.addPost(this.state)
+        this.props.addProfile(this.state)
     }
     
     render() {
@@ -76,13 +76,13 @@ class ProfilesForm extends Component {
                 <br />
 
                 <label>Profile Pic: </label>
-                <input type="file" value={this.state.profile_pic} onChange={this.handleChange} name="profile_pic" />
+                <input type="string" value={this.state.profile_pic} onChange={this.handleChange} name="profile_pic" />
 
                 <br />
                 <br />
 
                 <label>Age: </label>
-                <input type="text" value={this.state.age} onChange={this.handleChange} name="age" />
+                <input type="number" value={this.state.age} onChange={this.handleChange} name="age" />
 
                 <br />
                 <br />
