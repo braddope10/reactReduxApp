@@ -18,6 +18,8 @@ class ProfilesForm extends Component {
         user_id: this.user_id
     }
 
+    // The user_id above might need to be changed
+
     handleChange = e => {
         const { name, value } = e.target
 
