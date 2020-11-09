@@ -4,6 +4,7 @@ import { connect } from 'react-redux'
 import { fetchPosts } from '../../actions/postsActions'
 import PostsForm from '../forms/PostsForm'
 import PostsList from './PostsList'
+import SplitPanel from 'split-panel-react';
 
 class PostsContainer extends Component {
 
@@ -14,9 +15,18 @@ class PostsContainer extends Component {
     render() {
         return (
             <div>
-                <PostsForm />
-                <h3>PostsContainer</h3>
-                <PostsList />
+                <SplitPanel>
+                        <div class="centered">
+                            <PostsForm />
+                        </div>
+                        <div >
+                            <ul>
+                                <h1 class="centerh3">Guest List</h1>
+                            </ul>    
+                            <PostsList class="centered" />
+                        </div>
+                
+                </SplitPanel>
             </div>
         )
     }

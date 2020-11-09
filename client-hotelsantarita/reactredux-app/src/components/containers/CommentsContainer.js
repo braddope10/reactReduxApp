@@ -13,6 +13,14 @@ class CommentsContainer extends Component {
     render() {
         return (
             <div>
+                <ul>
+                    <ul>
+                        _____________________________
+                        <h4>
+                            Notes:
+                        </h4>
+                    </ul>
+                </ul>
                 <CommentsList />
                 <CommentsForm />
             </div>

@@ -7,12 +7,11 @@ const CommentsList = ({comments}) => {
             {comments.map(comment =>
                 <ul key={comment.id}>
                     <ul>
-                        <h5>
+                        <p>
                             Associate: {comment.associate}
-                        </h5>
-                        <h6>
-                            Update: {comment.text}
-                        </h6>
+                            <br />
+                            Note: {comment.note}
+                        </p>
                     </ul>
                 </ul>    
             )}

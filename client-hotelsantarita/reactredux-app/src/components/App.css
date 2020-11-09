@@ -23,3 +23,30 @@ nav {
     min-height:200px;
     text-align: top
 } */
+
+.reverse {
+    display:flex;
+    flex-direction: column-reverse;
+}
+
+
+/* .leftPostsForm {
+    display: flex;
+    flex: 1;
+}
+
+.rightPostsList {
+    flex: 1
+} */
+.centered {
+    height: 100vh; /* Magic here */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+.centerh3 {
+    display: flex;
+    justify-content: left;
+    align-items: left;
+}

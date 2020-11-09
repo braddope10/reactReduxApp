@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import { addPost } from '../../actions/postsActions'
+import RoomOptions from './RoomOptions'
 
 class PostsForm extends Component {
     
@@ -31,6 +32,9 @@ class PostsForm extends Component {
     render() {
         return (
             <form onSubmit={this.handleSubmit}>
+                <br />
+                <br />
+                <br />
                 <label>
                     <h1>New Guest</h1>
                 </label>
@@ -73,40 +77,7 @@ class PostsForm extends Component {
 
                     Room:
                     <br />
-                    <select name="room">
-                        <option value="Room #1 /1 Full">#1 /1 Full</option>
-                        <option value="Room #2 /1 Full">#2 /1 Full</option>
-                        <option value="Room #3 /1 Full">#3 /1 Full</option>
-                        <option value="Room #4 /1 Full">#4 /1 Full</option>
-                        <option value="Room #5 /1 Full, 1 Twin">#5 /1 Full, 1 Twin</option>
-                        <option value="Room #6 /1 Full">#6 /1 Full</option>
-                        <option value="Room #7 /1 Full">#7 /1 Full</option>
-                        <option value="Room #8 /1 Full, 1 Twin">#8 /1 Full, 1 Twin</option>
-                        <option value="Room #9 /1 Full">#9 /1 Full</option>
-                        <option value="Room #10 /1 Full">#10 /1 Full</option>
-                        <option value="Room #11 /2 Full">#11 /2 Full</option>
-                        <option value="Room #12 /2 Full">#12 /2 Full</option>
-                        <option value="Room #14 /2 Full">#14 /2 Full</option>
-                        <option value="Room #15 /2 Full, 1 Twin">#15 /2 Full, 1 Twin</option>
-                        <option value="Room #16 /1 Full">#16 /1 Full</option>
-                        <option value="Room #17 /2 Full">#17 /2 Full</option>
-                        <option value="Room #18 /1 Full, 1 Twin">#18 /1 Full, 1 Twin</option>
-                        <option value="Room #19 /2 Full, 1 Twin">#19 /2 Full, 1 Twin</option>
-                        <option value="Room #20 /2 Full">#20 /2 Full</option>
-                        <option value="Room #21 /1 Full">#21 /1 Full</option>
-                        <option value="Room #22 /2 Full">#22 /2 Full</option>
-                        <option value="Room #23 /2 Full">#23 /2 Full</option>
-                        <option value="Room #24 /1 Full">#24 /1 Full</option>
-                        <option value="Room #25 /1 Full, 1 Twin">#25 /1 Full, 1 Twin</option>
-                        <option value="Room #26 /2 Full">#26 /2 Full</option>
-                        <option value="Room #27 /2 Full">#27 /2 Full</option>
-                        <option value="Room #28 /2 Full, 1 Twin">#28 /2 Full, 1 Twin</option>
-                        <option value="Room #29 /1 Full">#29 /1 Full</option>
-                        <option value="Room #30 /1 Full">#30 /1 Full</option>
-                        <option value="Room #31 /1 Full">#31 /1 Full</option>
-                        <option value="Room #32 /2 Full">#32 /2 Full</option>
-                        <option value="Room #33 /1 Full, 1 Twin">#33 /1 Full, 1 Twin</option>
-                    </select>
+                    <RoomOptions />
 
                     <br />
                     <br />

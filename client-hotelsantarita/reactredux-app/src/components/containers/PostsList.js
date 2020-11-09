@@ -1,46 +1,37 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import CommentsContainer from './CommentsContainer'
-import CommentsList from './CommentsList'
+
 
 const PostsList = ({posts}) => {
     return (
-        <div>
+        <div className="reverse" >
             {posts.map(post => 
-                <ul key={post.id}>
+                <ul key={post.id} >
+                    _______________________________________
                     <h4>
                         Cashier: {post.cashier}
                     </h4>
-                    <h6>
-                        Guest: {post.guest}
-                    </h6>
-                    <h6>
-                        Content: {post.content}
-                    </h6>
-                    <h6>
-                        Room: {post.room}
-                    </h6>
-                    <h6>
-                        Occupation Date: {post.occupationdate}
-                    </h6>
-                    <h6>
-                        Disoccupation Date: {post.disoccupationdate}
-                    </h6>
-                    <h6>
-                        Amount Paid: {post.amountpaid}
-                    </h6>
-                    <h6>
-                        Guest Count: {post.amountofpeople}
-                    </h6>
-
+                    <ul>
+                        <p>
+                            Guest: <ul><li>{post.guest}</li></ul>
+                            <br />
+                            Content: <ul><li>{post.content}</li></ul>
+                            <br />
+                            Room: <ul><li>{post.room}</li></ul>
+                            <br />
+                            Occupation Date: <ul><li>{post.occupationdate}</li></ul>
+                            <br />
+                            Disoccupation Date: <ul><li>{post.disoccupationdate}</li></ul>
+                            <br />
+                            Amount Paid: <ul><li>{post.amountpaid}</li></ul>
+                            <br />
+                            Guest Count: <ul><li>{post.amountofpeople}</li></ul>
+                        </p>
+                    </ul>
                     <CommentsContainer />
-
-                    <br />
-                </ul>
-                
+                </ul> 
             )}
-
-            
         </div>
     )
 }

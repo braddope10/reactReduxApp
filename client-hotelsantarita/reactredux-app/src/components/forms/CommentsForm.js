@@ -1,12 +1,13 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import { addComment } from '../../actions/commentsActions'
+// import { PostsList } from '../containers/PostsList'
 
 class CommentsForm extends Component {
 
     state = {
-        text: '',
-        post_id: this.post_id
+        associate: '',
+        note: ''
     }
 
     handleChange = e => {
@@ -24,11 +25,11 @@ class CommentsForm extends Component {
 
     render() {
         return (
-            <ul>
                 <form onSubmit={this.handleSubmit}>
+                    <ul>
                         <ul>
                             _____________________________
-                            <h5>New Update:</h5>
+                            <h5>New Note:</h5>
                             <h6>
                                 Associate: 
                                 <br />
@@ -37,17 +38,16 @@ class CommentsForm extends Component {
                                 <br />
                                 <br />
 
-                                Comment: 
+                                Note: 
                                 <br />
-                                <input type="text" value={this.state.text} onChange={this.handleChange} name="text" />
+                                <input type="text" value={this.state.note} onChange={this.handleChange} name="note" />
                             </h6>
 
-                            <input type='submit' value="Submit Update" />
+                            <input type='submit' value="Submit Note" />
                             <br />
-                            _____________________________
                         </ul>
+                    </ul>
                 </form>
-            </ul>
         )
     }
 }
