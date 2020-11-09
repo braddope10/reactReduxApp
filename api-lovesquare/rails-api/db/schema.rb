@@ -10,40 +10,24 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_10_11_014636) do
+ActiveRecord::Schema.define(version: 2020_10_07_231512) do
 
   create_table "comments", force: :cascade do |t|
+    t.string "associate"
     t.string "text"
-    t.integer "user_id"
     t.integer "post_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
 
   create_table "posts", force: :cascade do |t|
+    t.string "associate"
+    t.string "guest"
     t.string "content"
-    t.integer "user_id"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
-  end
-
-  create_table "profiles", force: :cascade do |t|
-    t.string "bio"
-    t.string "name"
-    t.string "city"
-    t.string "state"
-    t.string "sex"
-    t.string "preference"
-    t.string "profile_pic"
-    t.integer "age"
-    t.integer "user_id"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
-  end
-
-  create_table "users", force: :cascade do |t|
-    t.string "email"
-    t.string "password_digest"
+    t.integer "amountpaid"
+    t.integer "occupationperiod"
+    t.integer "beds"
+    t.integer "roomnumber"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end

@@ -5,6 +5,7 @@ class CreatePosts < ActiveRecord::Migration[6.0]
       t.string :guest
       t.string :content
       t.integer :amountpaid
+      t.integer :amountofpeople
       t.integer :occupationperiod 
       t.integer :beds
       t.integer :roomnumber
