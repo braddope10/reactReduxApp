@@ -21,10 +21,11 @@ ActiveRecord::Schema.define(version: 2020_10_07_231512) do
   end
 
   create_table "posts", force: :cascade do |t|
-    t.string "associate"
+    t.string "cashier"
     t.string "guest"
     t.string "content"
     t.integer "amountpaid"
+    t.integer "amountofpeople"
     t.integer "occupationperiod"
     t.integer "beds"
     t.integer "roomnumber"

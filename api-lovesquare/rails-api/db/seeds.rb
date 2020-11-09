@@ -6,10 +6,6 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-User.create(email: "braddope@hotmail.com", password_digest: "123456")
+Post.create(cashier: "Pepe", guest: "juan", content: "", amountpaid: 420, amountofpeople: 2, occupationperiod: 1, beds: 1, roomnumber: 30)
 
-Profile.create(bio: "I'm a full-stack dev", name: "Bradley", city: "Las Vegas", state: "NV", sex: "Male", preference: "Straight", profile_pic: "", age: 21, user_id: 1)
-
-Post.create(content: "wow", user_id: 1)
-
-Comment.create(text: "what", user_id: 1, post_id: 1)
+Comment.create(associate: "Nena", text: "Cleaned room at 12:00PM", post_id: 1)
