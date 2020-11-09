@@ -13,8 +13,8 @@ class PostsContainer extends Component {
     render() {
         return (
             <div>
-                <h3>PostsContainer</h3>
                 <PostsForm />
+                <h3>PostsContainer</h3>
             </div>
         )
     }

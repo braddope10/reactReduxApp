@@ -4,11 +4,11 @@ class CreatePosts < ActiveRecord::Migration[6.0]
       t.string :cashier
       t.string :guest
       t.string :content
+      t.string :room
+      t.string :yearmonthday
       t.integer :amountpaid
       t.integer :amountofpeople
       t.integer :occupationperiod 
-      t.integer :beds
-      t.integer :roomnumber
 
       t.timestamps
     end

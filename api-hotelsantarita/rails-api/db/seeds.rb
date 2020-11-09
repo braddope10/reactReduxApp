@@ -6,6 +6,6 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-Post.create(cashier: "Pepe", guest: "juan", content: "", amountpaid: 420, amountofpeople: 2, occupationperiod: 1, beds: 1, roomnumber: 30)
+Post.create(cashier: "Pepe", guest: "juan", content: "", room: "#1 / 1 Bed", yearmonthday: "2020-11-18", amountpaid: 420, amountofpeople: 2, occupationperiod: 1)
 
 Comment.create(associate: "Nena", text: "Cleaned room at 12:00PM", post_id: 1)

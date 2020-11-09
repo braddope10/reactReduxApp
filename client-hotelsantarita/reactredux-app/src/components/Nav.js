@@ -7,18 +7,18 @@ class Nav extends Component {
         return (
             <nav>
                 <Link to="/">
-                    <h3>Love Square</h3>
+                    <h3>Hotel Santa Rita</h3>
                 </Link>
                 
                 <ul className="nav-links">
-                    <Link to="/login">
-                        <li>Login</li>
+                    <Link to="/posts">
+                        <li>Guest List</li>
                     </Link>
-                   
 
-                    <Link to="/signup">
-                        <li>Sign Up</li>
+                    <Link to="/about">
+                        <li>About</li>
                     </Link>
+
                 </ul>
             </nav>
         )

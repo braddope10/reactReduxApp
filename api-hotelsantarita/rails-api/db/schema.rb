@@ -24,11 +24,11 @@ ActiveRecord::Schema.define(version: 2020_10_07_231512) do
     t.string "cashier"
     t.string "guest"
     t.string "content"
+    t.string "room"
+    t.string "yearmonthday"
     t.integer "amountpaid"
     t.integer "amountofpeople"
     t.integer "occupationperiod"
-    t.integer "beds"
-    t.integer "roomnumber"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
