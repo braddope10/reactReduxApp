@@ -1,7 +1,5 @@
 import React, { Component } from 'react'
-
 import { connect } from 'react-redux'
-
 import { addComment } from '../../actions/commentsActions'
 
 class CommentsForm extends Component {
@@ -26,19 +24,30 @@ class CommentsForm extends Component {
 
     render() {
         return (
-            <form onSubmit={this.handleSubmit}>
-                <label>New Comment:</label>
+            <ul>
+                <form onSubmit={this.handleSubmit}>
+                        <ul>
+                            _____________________________
+                            <h5>New Update:</h5>
+                            <h6>
+                                Associate: 
+                                <br />
+                                <input type="text" value={this.state.associate} onChange={this.handleChange} name="associate" />
 
-                <br />
-                <br />
+                                <br />
+                                <br />
 
-                <input type='text' value={this.state.text} onChange={this.handleChange} name="text" />
+                                Comment: 
+                                <br />
+                                <input type="text" value={this.state.text} onChange={this.handleChange} name="text" />
+                            </h6>
 
-                <br />
-                <br />
-
-                <input type='submit' value="Create Comment" />
-            </form>
+                            <input type='submit' value="Submit Update" />
+                            <br />
+                            _____________________________
+                        </ul>
+                </form>
+            </ul>
         )
     }
 }

@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
+import CommentsContainer from './CommentsContainer'
+import CommentsList from './CommentsList'
 
 const PostsList = ({posts}) => {
     return (
@@ -30,9 +32,15 @@ const PostsList = ({posts}) => {
                     <h6>
                         Guest Count: {post.amountofpeople}
                     </h6>
+
+                    <CommentsContainer />
+
                     <br />
                 </ul>
+                
             )}
+
+            
         </div>
     )
 }

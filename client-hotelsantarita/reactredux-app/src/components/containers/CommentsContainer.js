@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import { fetchComments } from '../../actions/commentsActions'
 import CommentsForm from '../forms/CommentsForm'
+import CommentsList from './CommentsList'
 
 class CommentsContainer extends Component {
 
@@ -12,7 +13,7 @@ class CommentsContainer extends Component {
     render() {
         return (
             <div>
-                CommentsContainer
+                <CommentsList />
                 <CommentsForm />
             </div>
         )

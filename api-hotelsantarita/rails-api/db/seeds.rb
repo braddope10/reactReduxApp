@@ -8,4 +8,4 @@
 
 Post.create(cashier: "Pepe", guest: "juan", content: "", room: "#1 / 1 Bed", occupationdate: "2020-11-18", disoccupationdate: "2020-11-19", amountpaid: 420, amountofpeople: 2)
 
-Comment.create(associate: "Nena", text: "Cleaned room at 12:00PM", post_id: 1)
+Comment.create(associate: "Nena", comment: "Cleaned room at 12:00PM", post_id: 1)
