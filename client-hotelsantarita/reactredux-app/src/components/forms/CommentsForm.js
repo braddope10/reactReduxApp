@@ -8,7 +8,6 @@ class CommentsForm extends Component {
 
     state = {
         text: '',
-        user_id: this.user_id,
         post_id: this.post_id
     }
 

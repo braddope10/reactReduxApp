@@ -1,38 +1,44 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
 
-
-export default class PostsList extends Component {
-    render() {
-        return (
-            <div>
-                
-            </div>
-        )
-    }
-}
-
 const PostsList = ({posts}) => {
     return (
         <div>
             {posts.map(post => 
-                <ul>
-                    <li key={post.id} style={{boder: '3px solid green'}}>
-                        <h4>
-                            {post.cashier}
-                        </h4>
-                        <b>
-                            {post.guest}
-                            {post.content}
-                            {post.room}
-                            {post.occupationdate}
-                            {post.disoccupationdate}
-                            {post.amountpaid}
-                            {post.amountofpeople}
-                        </b>
-                    </li>
+                <ul key={post.id}>
+                    <h4>
+                        Cashier: {post.cashier}
+                    </h4>
+                    <h6>
+                        Guest: {post.guest}
+                    </h6>
+                    <h6>
+                        Content: {post.content}
+                    </h6>
+                    <h6>
+                        Room: {post.room}
+                    </h6>
+                    <h6>
+                        Occupation Date: {post.occupationdate}
+                    </h6>
+                    <h6>
+                        Disoccupation Date: {post.disoccupationdate}
+                    </h6>
+                    <h6>
+                        Amount Paid: {post.amountpaid}
+                    </h6>
+                    <h6>
+                        Guest Count: {post.amountofpeople}
+                    </h6>
+                    <br />
                 </ul>
             )}
         </div>
     )
 }
+
+const mapStateToProps = state => {
+    return{posts: state.posts}
+}
+
+export default connect(mapStateToProps)(PostsList)
